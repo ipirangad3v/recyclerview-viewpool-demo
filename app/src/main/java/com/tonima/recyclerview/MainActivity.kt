@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(), PerformanceLogger {
         updateViewCount()
         logTextView.text = "Logs de Performance:\n"
         scenarioStatusTextView.text = "Cenário Atual: ANTES"
-        mainRecyclerView.adapter = VerticalAdapter(this, null)
+        mainRecyclerView.adapter = VerticalAdapter(this)
         memoryHandler.post(memoryRunnable)
     }
 

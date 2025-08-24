@@ -5,12 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import com.tonima.recyclerview.R
 import com.tonima.recyclerview.utils.PerformanceLogger
 
 class VerticalAdapter(
     private val logger: PerformanceLogger,
-    private val sharedPool: RecyclerView.RecycledViewPool? = null
+    private val sharedPool: RecycledViewPool? = null
 ) : RecyclerView.Adapter<VerticalAdapter.VerticalViewHolder>() {
 
     class VerticalViewHolder(view: View) : RecyclerView.ViewHolder(view) {
