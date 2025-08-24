@@ -64,6 +64,15 @@
             android:textStyle="bold"
             android:text="Views Criadas: 0" />
 
+        <TextView
+            android:id="@+id/ram_usage_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="RAM: 0 MB" />
+
     </LinearLayout>
 
     <ScrollView
@@ -83,7 +92,7 @@
             android:fontFamily="monospace"
             android:text="Logs de Performance:\n"
             android:textColor="#333333"
-            android:textSize="10sp"/>
+            android:textSize="10sp" />
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
